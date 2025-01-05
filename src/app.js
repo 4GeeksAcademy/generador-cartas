@@ -63,5 +63,5 @@ window.onload = function() {
     } else {
       return !boolean;
     }
-  }, 1000);
+  }, 10000);
 };
