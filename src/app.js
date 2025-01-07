@@ -11,8 +11,8 @@ window.onload = function() {
   // alert("HOLA");
 
   let cardIcons = [
-    '<i class="bi bi-suit-heart-fill"></i>', // Corazón
-    '<i class="bi bi-suit-diamond-fill"></i>', // Diamante
+    '<i class="bi bi-suit-heart-fill" style="color: red;"></i>', // Corazón
+    '<i class="bi bi-suit-diamond-fill" style="color: red;"></i>', // Diamante
     '<i class="bi bi-suit-club-fill"></i>', // Trébol
     '<i class="bi bi-suit-spade-fill"></i>' // Pica
   ];
@@ -64,4 +64,16 @@ window.onload = function() {
       return !boolean;
     }
   }, 10000);
+  let handleClick = document.querySelector(".change");
+  let inputWidth = document.querySelector("#width");
+  let inputHeight = document.querySelector("#width");
+  let card = document.querySelector(".card");
+
+  handleClick.addEventListener("click", () => {
+    let inputValorWidth = inputWidth.value + "px";
+    let inputValorHeigth = inputHeight.value + "px";
+
+    card.style.width = inputValorWidth;
+    card.style.height = inputValorHeigth;
+  });
 };
