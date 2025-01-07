@@ -50,20 +50,15 @@ window.onload = function() {
       x.innerHTML = cardIcons[indexIcons];
     });
   });
-  let boolean = true;
 
   setInterval(() => {
-    if (boolean) {
-      let indexCartas = indexRandom(cartas);
-      let indexIcons = indexRandom(cardIcons);
-      num.innerHTML = cartas[indexCartas];
-      icon.forEach(x => {
-        x.innerHTML = cardIcons[indexIcons];
-      });
-    } else {
-      return !boolean;
-    }
-  }, 10000);
+    let indexCartas = indexRandom(cartas);
+    let indexIcons = indexRandom(cardIcons);
+    num.innerHTML = cartas[indexCartas];
+    icon.forEach(x => {
+      x.innerHTML = cardIcons[indexIcons];
+    });
+  }, 1000);
   let handleClick = document.querySelector(".change");
   let inputWidth = document.querySelector("#width");
   let inputHeight = document.querySelector("#height");
