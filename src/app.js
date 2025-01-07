@@ -66,7 +66,7 @@ window.onload = function() {
   }, 10000);
   let handleClick = document.querySelector(".change");
   let inputWidth = document.querySelector("#width");
-  let inputHeight = document.querySelector("#width");
+  let inputHeight = document.querySelector("#height");
   let card = document.querySelector(".card");
 
   handleClick.addEventListener("click", () => {
